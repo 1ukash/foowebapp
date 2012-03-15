@@ -4,8 +4,8 @@
 	
 	<property name="name" value="foo" />
 	<property name="webinf.dir" value="${basedir}/webapp/WEB-INF" />
-	<property name="war.dir" value="${basedir}/../release/build" />
-	<property name="build.path" value="${basedir}/../release" />
+	<property name="war.dir" value="${basedir}/../foowebapp-release/build" />
+	<property name="build.path" value="${basedir}/../foowebapp-release" />
 	
 	 <path id="build.classpath">
 	 	<fileset dir="${basedir}/webapp/WEB-INF/lib">
@@ -59,8 +59,8 @@
 	</target>
 	
 	<!--TOMCAT STARTUP OPTIONS-->
-    <property name="tomcat.image" location="${basedir}/server/apache-tomcat-5.5.29.zip"/>
-    <property name="tomcat.base" location="${build.path}/apache-tomcat-5.5.29"/>
+    <property name="tomcat.image" location="${basedir}/server/apache-tomcat-6.0.35.zip"/>
+    <property name="tomcat.base" location="${build.path}/apache-tomcat-6.0.35"/>
 	<property name="deployment.tomcat.context" value="${name}"/>
 	<property name="deployment.tomcat.context.file" location="${basedir}/server/conf/dev/context.xml"/>
 	
