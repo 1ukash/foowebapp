@@ -24,5 +24,15 @@
   		<servlet-name>hi</servlet-name>
 		<url-pattern>/hi/*</url-pattern>  	
   	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>person</servlet-name>
+  		<servlet-class>ru.spbstu.telematics.student.PersonServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>person</servlet-name>
+		<url-pattern>/person/*</url-pattern>  	
+  	</servlet-mapping>
 
 </web-app>
